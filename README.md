@@ -21,7 +21,9 @@ You can also ask it to restart itself with "restart please".
 
 ## Building and flashing
 
-Assuming the ESP-IDF has been set up and activated, and the ESP-S3-BOX is connected, simply:
+First, ensure you have either recursively checked out the repo, or explicitly initialise the submodules with `git submodule update --init --recursive`. The jokes database is sourced from a submodule, and the build will fail if the submodule is not available.
+
+With that done, and assuming the ESP-IDF has been set up and activated, simply:
 
 ```
   idf.py build
